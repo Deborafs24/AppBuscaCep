@@ -1,15 +1,13 @@
-namespace AppBuscaCep.Models;
+﻿using AppBuscaCep.Models;
 
-public class Cidade : ContentPage
+namespace AppBuscaCep.Models
 {
-	public Cidade()
-	{
-		Content = new VerticalStackLayout
-		{
-			Children = {
-				new Label { HorizontalOptions = LayoutOptions.Center, VerticalOptions = LayoutOptions.Center, Text = "Welcome to .NET MAUI!"
-				}
-			}
-		};
-	}
+    public class Cidade
+    {
+        public int id_cidade {  get; set; }
+        public string descricao { get; set; }
+        public string uf { get; set; }
+        public int codigo_ibge { get; set; }
+        public int ddd { get; set; }
+    }
 }

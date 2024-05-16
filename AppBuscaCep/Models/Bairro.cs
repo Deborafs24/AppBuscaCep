@@ -1,15 +1,9 @@
-namespace AppBuscaCep.Models;
+﻿using AppBuscaCep.Models;
 
-public class Bairro : ContentPage
+namespace AppBuscaCep.Models
 {
-	public Bairro()
-	{
-		Content = new VerticalStackLayout
-		{
-			Children = {
-				new Label { HorizontalOptions = LayoutOptions.Center, VerticalOptions = LayoutOptions.Center, Text = "Welcome to .NET MAUI!"
-				}
-			}
-		};
-	}
+    public class Bairro
+    {
+        public string descricao_bairro { get; set; }
+    }
 }
